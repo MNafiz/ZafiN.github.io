@@ -51,7 +51,7 @@ b"crew{l00ks_l1k3_y0u_h4v3_you_He4rd_0f_c0pp3rsm1th_sh0r+_p4d_4tt4ck_th4t_w45n't
 
 ## Huge e
 
-### Diketahui bahwa modulus merupakan bilangan prima sehingga mudah mendapatkan private key nya. akan tetapi, e bernilai sangat besar. hal tersebut dapat diatasi dengan menggunakan fermat little theorem dimana jika gcd(a,n) = 1, maka pow(a,b,n) = pow(a,b % phi(n),n). dimana phi(n) adalah banyaknya bilangan relatif prima dengan n yang lebih kecil dari n.  
+### Diketahui bahwa modulus merupakan bilangan prima sehingga mudah mendapatkan private key nya. akan tetapi, e bernilai sangat besar, sehingga tidak bisa dilakukan komputasi secara eksplisit. hal tersebut dapat diatasi dengan menggunakan fermat little theorem dimana jika gcd(a,n) = 1, maka pow(a,b,n) = pow(a,b % phi(n),n). dimana phi(n) adalah banyaknya bilangan relatif prima dengan n yang lebih kecil dari n.  
 
 ```markdown
 Diberikan source code enkripsi RSA dan hasil enkripsinya. Berikut source code nya.
