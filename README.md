@@ -20,7 +20,7 @@ Syntax highlighted code block
 
 asdasdas
 
-1. Numbered
+1. Numbered and
 2. List
 
 **Bold** and _Italic_ and `Code` text
