@@ -6,6 +6,7 @@
 
 ## HUGE E
 
+### Diketahui bahwa n merupakan bilangan prima 8192 bit, sementara kunci publiknya adalah 3 yang menyebabkan msg1 dan msg2 dapat di recover menggunakan low exponent attack. lalu, karena r1 dan r2 lebih kecil dari 2 pangkat m, dimana m = 510. maka flag dapat di recover dengan membagi salah-satu dari msg1 dan msg2 dengan 2 pangkat m.
 <!-- Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for -->
 
 ```markdown
@@ -33,8 +34,6 @@ C1 = Integer(pow(msg1,e,n))
 C2 = Integer(pow(msg2,e,n))
 print(f'{n = }\n{C1 = }\n{C2 = }')
 `
-
-Diketahui bahwa n merupakan bilangan prima 8192 bit, sementara kunci publiknya adalah 3 yang menyebabkan msg1 dan msg2 dapat di recover menggunakan low exponent attack. lalu, karena r1 dan r2 lebih kecil dari 2 pangkat m, dimana m = 510. maka flag dapat di recover dengan membagi salah-satu dari msg1 dan msg2 dengan 2 pangkat m.
 
 `
 >>> from Crypto.Util.number import *
