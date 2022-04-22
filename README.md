@@ -49,7 +49,7 @@ b"crew{l00ks_l1k3_y0u_h4v3_you_He4rd_0f_c0pp3rsm1th_sh0r+_p4d_4tt4ck_th4t_w45n't
 
 ## Huge e
 
-### Diketahui bahwa modulus merupakan bilangan prima 
+### Diketahui bahwa modulus merupakan bilangan prima sehingga mudah mendapatkan private key nya. akan tetapi, e bernilai sangat besar. hal tersebut dapat diatasi dengan menggunakan fermat little theorem dimana jika gcd(a,n) = 1, maka pow(a,b,n) = pow(a,b % phi(n),n). dimana phi(n) adalah banyaknya bilangan relatif prima dengan n yang lebih kecil dari n.  
 
 ```markdown
 Diberikan source code enkripsi RSA dan hasil enkripsinya. Berikut source code nya.
@@ -84,6 +84,29 @@ print(f'e1 = {e1}')
 print(f'e2 = {e2}')
 print(f'e3 = {e3}')
 print(f'c = {c}')
+`
+
+Berikut solvernya
+`
+>>> from Crypto.Util.number import *
+>>> from gmpy2 import next_prime
+>>> exec(open('outt.txt').read())
+>>> faktor = []
+>>> tes = 1<<19
+>>> while(len(faktor) <= 40):
+...     tes = next_prime(tes)
+...     if (p-1) % tes == 0:
+...             faktor.append(int(tes))
+... 
+>>> phi = 1
+>>> for i in faktor:
+...     phi *= i-1
+... 
+>>> e2e3 = pow(e2,e3,phi)
+>>> e = pow(e1,e2e3,p-1)
+>>> d = pow(e,-1,p-1)
+>>> long_to_bytes(pow(c,d,p))
+b'crew{7hi5_1s_4_5ma11er_numb3r_7han_7h3_Gr4ham_numb3r}'
 `
 ```
 <!-- Syntax highlighted code block
