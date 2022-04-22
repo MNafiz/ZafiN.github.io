@@ -1,4 +1,6 @@
-## Write Up crewCTF 2022 kategori kriptografi
+# Write Up crewCTF 2022 kategori kriptografi
+
+Saya Nafiz atau psudonym nya adalah ZafiN dari Cyber Security IPB, ingin memberikan writeup crewCTF 2022 kategori kriptografi. berikut writeup dari saya.
 
 <!-- You can use the [editor on GitHub](https://github.com/MNafiz/ZafiN.github.io/edit/main/README.md) to maintain and preview the content for your website in Markdown files. -->
 
