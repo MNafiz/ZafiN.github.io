@@ -11,6 +11,7 @@
 ```markdown
 Diberikan source code enkripsi RSA dan hasil enkripsinya sebagai berikut.
 
+``
 from Crypto.PublicKey import RSA
 from Crypto.Util.number import bytes_to_long
 import random
@@ -31,7 +32,9 @@ msg2 = pow(2,m)*flag + r2
 C1 = Integer(pow(msg1,e,n))
 C2 = Integer(pow(msg2,e,n))
 print(f'{n = }\n{C1 = }\n{C2 = }')
+``
 
+```
 <!-- Syntax highlighted code block
 
 # Header 1
@@ -49,7 +52,6 @@ asdasdas
 **Bold** and _Italic_ and `Code` text
 
 [Link](url) and ![Image](src) -->
-```
 
 For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
 
